@@ -4,6 +4,8 @@ from sys import argv
 
 interface,vlan = argv[1:]
 
+print(argv)
+
 access_template=['switchport mode access',
                  'switchport access vlan {}',
                  'switchport nonegotiate',
