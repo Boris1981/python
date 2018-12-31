@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-from sys import argv
-print('Test 5.2 \n First argument is name \n')
+#from sys import argv
+print('Test 5.2 \n ')
+name=input('Enter name: ')
 london_co	=	{
 				'r1'	:	{
 				'location':	'21	New	Globe	Walk',
@@ -26,6 +27,6 @@ london_co	=	{
 				'routing':	True
 				}
 }
-name=argv[1]
+#name=argv[1]
 print(london_co[name])
 
