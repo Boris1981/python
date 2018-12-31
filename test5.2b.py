@@ -27,12 +27,14 @@ london_co	=	{
 				'routing':	True
 				}
 }
+list0=list(london_co.keys())
+name=input('Enter name of device ('+','.join(list0)+'): ' )
 
-print('Enter name of device')
-print(list(london_co.keys()))
-name=input(': ')
-print('Enter parameter name')
-print(list(london_co[name].keys()))
-parm=input(': ')
+list1=list(london_co[name].keys())
+
+#print('Enter parameter name'+','.join(list1) + ':' )
+#print(list(london_co[name].keys()))
+
+parm=input('Enter parameter name (' + ','.join(list1) + '): ')
 #name=argv[1]
 print(london_co[name][parm])
