@@ -4,7 +4,8 @@ service timestamps log datetime msec localtime show-timezone year
 service password-encryption
 service sequence-numbers
 !
+duplex
 no ip domain lookup
 !
-ip ssh version 2
+ip ssh version 2 alias
 !
